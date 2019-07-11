@@ -1,0 +1,375 @@
+
+ *{
+    margin:0;padding:0;
+    border:0;
+}
+body{
+    text-align: center;
+}
+img {
+    vertical-align: middle;
+    border-style: none;
+}
+/*顶部轮播*/
+#main{
+    width:1900px;
+    margin:0 auto;
+}
+#banner{
+    width:1900px;
+    overflow: hidden;
+    position: relative;
+}
+#ul-imgs{
+    list-style: none;
+}
+#ul-imgs.transition{
+    transition:all .5s linear;
+}
+#ul-imgs>li{
+    width:1900px;
+    float: left;
+}
+#ul-imgs img{
+    width:1900px;
+}
+#ul-idxs{
+    width:100px;
+    margin: 0 auto;
+    list-style: none;
+    position: absolute;
+    bottom:25px;
+    left:50%;
+    margin-left: -50px;
+}
+#ul-idxs>li{
+    float: left;
+    width:10px;
+    height:10px;
+    background-color: #fff;
+    border-radius: 50%;
+    margin:0 5px;
+    cursor: pointer;
+}
+#ul-idxs>li.active{
+    background-color: #000;
+}
+#btn-left,#btn-right{
+    width:60px;
+    height:100%;
+    position: absolute;
+    top:0;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+}
+#btn-left{
+    left:150px;
+    background-image: url(../img/index/left_ar.png);
+}
+#btn-right{
+    right:150px;
+    background-image: url(../img/index/right_ar.png);
+}
+#btn-left:hover,#btn-right:hover{
+    background-size:40px 70px;
+}
+.index_city_img{
+    width:100%;
+}
+.index_city{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.index_city>ul{
+    justify-content:center;
+    width:90%;
+    margin:0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+.index_city>ul>li{
+    float:left;
+}
+.index_city>ul>li>div{
+    width: 150px;
+    height: 40px;
+    border: 1px solid #000;
+    text-align: center;
+    line-height: 36px;
+    display: inline-block;
+    margin-right:1rem;
+    margin-bottom:1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.index_city>ul>li>div>a{
+    width:100%;
+    height:100%;
+    text-decoration: none;
+    color:#000;
+    font-size: 1rem;
+}
+.index_city>ul>li>div>a:hover{
+    background:#000;
+    color:#fff;
+}
+.client_photo{
+    width:1900px; 
+    margin:0 auto;
+    overflow:hidden;
+}
+.client-banner{
+    width:1900px;
+    overflow: hidden;
+    
+}
+#ul-check.transition{
+    transition:all .5s linear;
+}
+#ul-check>li{
+    width:1900px;
+    height:550px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: left;
+}
+.client_photo .check{
+    display: inline-block;
+    border: 1px solid #e6e6e6;
+    border-left: none;
+    padding: 20px;
+}
+
+.client_photo .check img{
+    width:520px;
+}
+.client_photo .check span,.client_photo .check div{
+    font-size: 20px;
+    color:#000;
+    text-align: center;
+    margin-top: 20px;
+}
+.check div p,.check div span{
+    margin-bottom: 12px;
+}
+.client_photo .check .btn_look{
+    width:150px;
+    height:50px;
+    margin:0 auto;
+    border:1px solid #000;
+    line-height: 50px;
+}
+.client_photo .check .btn_look:hover{
+    background:#000;
+    color:#fff;
+}
+.news_spring{
+    margin-top: 120px;
+    position: relative;
+}
+.new_look{
+    display: inline-block;
+    width: 9%;
+    position: absolute;
+    right: 19.5%;
+    top:-10%;
+}
+/*最新客照*/
+.container{
+    width:100%;
+    position: relative;
+    padding: 0;
+    margin-right: auto;
+    margin-left:auto; 
+}
+.brand_words{
+    margin-top: 9%;
+    text-align: center;
+}
+.brand_words h1{
+    font-size: 3rem;
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+.brand_words p{
+    margin-bottom: 3.6%;
+    font-size: 2rem;
+    margin-top: 0;
+}
+.brand_words span{
+    display: block;
+    transform: scale(0.64);
+}
+.swiper-container{
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    list-style: none;
+    padding: 0;
+    z-index: 1;
+}
+/*最新客照--轮播图*/
+.new_main{
+    width:1900px;
+    margin:0 auto;
+    overflow:hidden;
+}
+#swiper_container{
+    width:1900px;
+    overflow: hidden;
+    position: relative;
+}
+#new_ul_imgs{
+    list-style: none;
+}
+#new_ul_imgs.transition{
+    transition:all .5s linear;
+}
+#new_ul_imgs>li{
+    width:1900px;
+    height:550px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: left; 
+}
+#new_ul_imgs>li>div{
+    margin: 20px;
+    text-align: center;
+}
+#new_ul_imgs>li>div p{
+    margin: 15px;
+}
+/*摄影师化妆师*/
+.star-activity-img>a>img{
+    vertical-align: middle;
+}
+/*最新微电影*/
+.video-box{
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 60px;
+}
+video{
+    object-fit: contain;
+}
+.video-area-text{
+    text-align: center;
+    margin-top: 6.7%;
+}
+.video-area-text p{
+    font-size: 1.5rem;
+    margin-bottom: 2%;
+}
+.video-area-text span{
+    font-size: 1.2rem;
+    display: block;
+    width: 100%;
+    transform: scale(0.64);
+}
+/*微电影轮播图*/
+#movie_container{
+    width:1900px;
+    overflow: hidden;
+    position: relative;
+}
+#new_ul_movies{
+    list-style: none;
+}
+#new_ul_movies.transition{
+    transition:all .5s linear;
+}
+#new_ul_movies>li{
+    width:1900px;
+    height:550px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: left; 
+}
+.li-movie-div{
+    margin: 50px;
+    position: relative;
+}
+.movie-change-img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 64px;
+    height: 64px;
+    background-image: url(../img/index/movie_anniu.png);
+    background-size: 64px 64px;
+}
+.movie_more_img{
+    width:70%;
+    vertical-align: middle;
+    border-style: none;
+    position: absolute;
+    left:15%;
+}
+/*品牌中心*/
+.brand_content{
+    width:70%;
+    margin:0 auto; 
+}
+.brand-four {
+    margin-top:55px;
+    padding-bottom: 40px;
+}
+.brand-four-first {
+    float: left;
+    width: 65.55%;
+}
+.brand-four a {
+    color: #000;
+    text-decoration: none;
+    background-color: transparent;
+}
+.img-fluid {
+    width:100%;
+    vertical-align: middle;
+    border-style: none;
+}
+.brand-four span {
+    font-size: 1.5rem;
+    margin-top: 25px;
+    margin-bottom: 40px;
+    display: inline-block;
+}
+.brand-four-two {
+    float: right;
+    width: 30.6%;
+}
+.brand-four-three {
+    float: left;
+    width: 30.6%;
+}
+.brand-four-four {
+    float: right;
+    width: 65.55%;
+}
+.baidamdd {
+    clear: both;
+    padding-top: 75px;
+    margin-bottom: 120px;
+}
+.img-baida{
+    width:70%;
+}
+.return-a {
+    width: 130px;
+    text-align: center;
+    background-color: #000;
+    line-height: 40px;
+    margin: 0px auto 10.1%;
+}
+.return-a a{
+    color:#fff;
+}
